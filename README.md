@@ -4,6 +4,7 @@
 ```
 mkvirtualenv scotus-predict
 cd scotus-predict
+pip install -r requirements.txt
 add2virtualenv src
 add2virtualenv src/scotus
 python src/scotus/build_model.py
