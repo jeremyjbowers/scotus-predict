@@ -148,9 +148,9 @@ def get_means(data, column, label, windows=[None],
               include_std=False, include_count=False):
     '''
     Get the court direction mean with optional rolling window.
-    
+
     TODO: EWMA
-    pandas.stats.moments.ewma(scdb_justice_data['justice'], 10).tail(1).tolist().pop()   
+    pandas.stats.moments.ewma(scdb_justice_data['justice'], 10).tail(1).tolist().pop()
     '''
 
     # Initialize

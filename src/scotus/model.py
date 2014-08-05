@@ -157,7 +157,7 @@ def get_ml_row(docket_id, scdb_case_data, scdb_justice_data):
       1. Issue
       2. Court of source
       3. Petitioner/respondent
-      
+
     Note that these are for ALL lower courts, other than #2, which constrain the lower court to the specific
     court of origin or source.
     '''

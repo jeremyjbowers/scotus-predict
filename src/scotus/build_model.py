@@ -208,7 +208,7 @@ for docket_id in docket_list:
         continue
 
     '''
-    If we have at least that many records, let's actually 
+    If we have at least that many records, let's actually
     train a model.
     '''
 
