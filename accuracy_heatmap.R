@@ -1,5 +1,5 @@
-# Heatmaps are a great way to display large amounts of information 
-# A great place to start is this tutorial by Nathan Yau from Flowing Data  
+# Heatmaps are a great way to display large amounts of information
+# A great place to start is this tutorial by Nathan Yau from Flowing Data
 # http://flowingdata.com/2010/01/21/how-to-make-a-heatmap-a-quick-and-easy-solution/
 
 # Imports
@@ -36,13 +36,13 @@ year_data$justice_name <- factor(year_data$justice_name, levels=unique(year_data
 # Let's generate a full heatmap
 scotusheatmap_final <- ggplot(year_data, aes(year, justice_name)) +
     geom_tile(aes(fill = year_data$V1), colour="grey") +
-    scale_fill_continuous(low="#fee08b", high="#1a9850",na.value="#333333") + 
+    scale_fill_continuous(low="#fee08b", high="#1a9850",na.value="#333333") +
     scale_x_continuous(name="Year", breaks=c(1953,1963,1973,1983, 1993, 2003, 2013)) +
     scale_y_discrete(name="Justice") +
     theme(legend.title=element_blank()) +
     theme(panel.background=element_blank())
 
-# Review the final product 
+# Review the final product
 scotusheatmap_final
 
 # Save to file
